@@ -24,7 +24,6 @@ class AddViewController: UIViewController {
         if userDefaults.object(forKey: "lylics") != nil{
             self.data = userDefaults.object(forKey: "lylics") as! [[String : Any]]
         }
-        view.backgroundColor = .purple
         
         //TODO: making toolbar
         let toolBarHeight = 50
@@ -49,6 +48,12 @@ class AddViewController: UIViewController {
         //MARK: add data
         data.append(addedData)
         UserDefaults.standard.setValue(data, forKey: "lylics")
+        
+        let previousController = self.presentingViewController as! UINavigationController
+       let preVC = previousController.viewControllers[previousController.viewControllers.count - 1] as! LylicsListViewController
+        preVC.fetchLylicsData()
+        preVC.tableView.reloadData()
+        
     }
     // Do any additional setup after loading the view.
 }
