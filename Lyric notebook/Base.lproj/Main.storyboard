@@ -7,6 +7,11 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="幻ノにじみ明朝.otf">
+            <string>MaboroshinoNijimiMincho</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Add View Controller-->
         <scene sceneID="U1u-oF-omL">
@@ -30,6 +35,10 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="murasaki" translatesAutoresizingMaskIntoConstraints="NO" id="VjF-yB-eJP">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ndm-FS-YtQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -37,6 +46,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="OYQ-CL-8fQ">
                         <barButtonItem key="rightBarButtonItem" title="Save" id="0Ww-1a-gI3">
+                            <color key="tintColor" red="0.6530265212059021" green="0.0001978176151169464" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="tappedSaveButton:" destination="wvh-Wm-jr3" id="yAc-Hr-bwJ"/>
                             </connections>
@@ -50,7 +60,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BHa-dr-3Tw" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5006" y="-14"/>
+            <point key="canvasLocation" x="5005.6000000000004" y="-14.842578710644679"/>
         </scene>
         <!--Lylics List View Controller-->
         <scene sceneID="Spo-ya-hk3">
@@ -71,25 +81,25 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="165"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="傘" translatesAutoresizingMaskIntoConstraints="NO" id="MLR-Kj-Owg">
-                                                    <rect key="frame" x="-58.5" y="0.0" width="492" height="165"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="グラデーションボタン" translatesAutoresizingMaskIntoConstraints="NO" id="MLR-Kj-Owg">
+                                                    <rect key="frame" x="-43" y="0.0" width="448" height="154"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="492" id="44g-ce-sGV"/>
                                                         <constraint firstAttribute="height" constant="80" id="Yv1-j4-RGa"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQ1-qc-Hz9">
-                                                    <rect key="frame" x="48" y="72" width="42" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQ1-qc-Hz9">
+                                                    <rect key="frame" x="160" y="67" width="54" height="20"/>
+                                                    <fontDescription key="fontDescription" name="MaboroshinoNijimiMincho" family="MaboroshinoNijimiMincho" pointSize="20"/>
+                                                    <color key="textColor" red="0.6530265212059021" green="0.0001978176151169464" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="MLR-Kj-Owg" firstAttribute="top" secondItem="uaF-wu-LBV" secondAttribute="top" id="2xr-ZS-7BT"/>
                                                 <constraint firstItem="jQ1-qc-Hz9" firstAttribute="centerY" secondItem="uaF-wu-LBV" secondAttribute="centerY" id="3T3-Gu-cyj"/>
-                                                <constraint firstItem="jQ1-qc-Hz9" firstAttribute="leading" secondItem="uaF-wu-LBV" secondAttribute="leadingMargin" constant="32" id="50C-aZ-Slf"/>
                                                 <constraint firstItem="MLR-Kj-Owg" firstAttribute="centerX" secondItem="uaF-wu-LBV" secondAttribute="centerX" id="8GF-TF-RBN"/>
+                                                <constraint firstItem="jQ1-qc-Hz9" firstAttribute="centerX" secondItem="uaF-wu-LBV" secondAttribute="centerX" id="dCj-xg-op6"/>
                                                 <constraint firstAttribute="bottom" secondItem="MLR-Kj-Owg" secondAttribute="bottom" id="sjf-1t-sQO"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -112,6 +122,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="QOx-1q-amu">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="TVW-Zu-aeK">
+                            <color key="tintColor" red="0.6530265212059021" green="0.0001978176151169464" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <segue destination="bXw-pj-84L" kind="presentation" modalPresentationStyle="automatic" id="G1m-P8-7YC"/>
                             </connections>
@@ -128,15 +139,6 @@
         <!--Navigation Controller-->
         <scene sceneID="23X-ve-veE">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Msr-ny-WZt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="WQW-mP-1km">
-                    <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
-                    <autoresizingMask key="autoresizingMask"/>
-                    <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WQW-mP-1km" id="88a-6I-bRc">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </tableViewCellContentView>
-                </tableViewCell>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bXw-pj-84L" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="CPw-hB-Qgi">
@@ -148,8 +150,17 @@
                         <segue destination="wvh-Wm-jr3" kind="relationship" relationship="rootViewController" id="F95-G9-aNf"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Msr-ny-WZt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="WQW-mP-1km">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WQW-mP-1km" id="88a-6I-bRc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </tableViewCellContentView>
+                </tableViewCell>
             </objects>
-            <point key="canvasLocation" x="4306" y="-14"/>
+            <point key="canvasLocation" x="4305" y="-2"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="UGx-sv-x3b">
@@ -171,7 +182,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="傘" width="1436" height="849"/>
+        <image name="murasaki" width="1181" height="1748"/>
+        <image name="グラデーションボタン" width="357" height="172"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

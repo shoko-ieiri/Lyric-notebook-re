@@ -19,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E331EBB72A91E09F009A2753 /* 幻ノにじみ明朝.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "幻ノにじみ明朝.otf"; path = "../../M-NijimiMincho/幻ノにじみ明朝.otf"; sourceTree = "<group>"; };
 		E3BB24302A35A00700F400B9 /* Lyric notebook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lyric notebook.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3BB24332A35A00700F400B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3BB24352A35A00700F400B9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +73,7 @@
 				E3DA6FCB2A481A2100B42903 /* AddViewController.swift */,
 				E3CE537C2A5A77A400749C92 /* lylicsListViewController.swift */,
 				E3CE53862A5A7FD600749C92 /* LylicsTableViewCell.swift */,
+				E331EBB72A91E09F009A2753 /* 幻ノにじみ明朝.otf */,
 			);
 			path = "Lyric notebook";
 			sourceTree = "<group>";
