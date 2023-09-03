@@ -11,6 +11,31 @@ class LylicsListViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
+    @IBOutlet weak var button: UIButton!
+    
+    //    FAB
+    var startingFrame : CGRect!
+    var endingFrame : CGRect!
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if (scrollView.contentOffset.y >= (scrollView.contentSize.height - scrollView.frame.size.height)) && self.button.isHidden {
+            self.button.isHidden = false
+            self.button.frame = startingFrame
+            UIView.animate(withDuration: 1.0) {
+                self.button.frame = self.endingFrame
+            }
+        }
+    }
+    func configureSizes() {
+        let screenSize = UIScreen.main.bounds
+        let screenWidth = screenSize.width
+        let screenHeight = screenSize.height
+        
+        startingFrame = CGRect(x: 0, y: screenHeight+100, width: screenWidth, height: 100)
+        endingFrame = CGRect(x: 0, y: screenHeight-100, width: screenWidth, height: 100)
+        
+    }
+    
     
     var data: [[String:Any]] = []
     
@@ -21,6 +46,8 @@ class LylicsListViewController: UIViewController {
         tableView.dataSource = self
         //TODO: 追加
         tableView.separatorStyle = .none
+        //        buttonを角丸にする
+        button.layer.cornerRadius = 32
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -28,7 +55,8 @@ class LylicsListViewController: UIViewController {
         tableView.reloadData()
     }
     
-     func fetchLylicsData(){
+   
+    func fetchLylicsData(){
         let userDefaults = UserDefaults.standard
         if userDefaults.object(forKey: "lylics") != nil{
             self.data = userDefaults.object(forKey: "lylics") as! [[String : Any]]
@@ -72,6 +100,6 @@ extension LylicsListViewController: UITableViewDelegate,UITableViewDataSource{
     
     
     
-   
+    
     
 }

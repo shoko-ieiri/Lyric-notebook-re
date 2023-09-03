@@ -15,12 +15,16 @@ class LylicsTableViewCell: UITableViewCell {
     @IBOutlet weak var backgroundImageView: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        
         // Initialization code
         
         //TODO: 追加
                backgroundImageView.layer.cornerRadius = 20
                backgroundImageView.clipsToBounds = true
     }
+
+    
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
@@ -29,4 +33,5 @@ class LylicsTableViewCell: UITableViewCell {
     }
 
 }
+
 

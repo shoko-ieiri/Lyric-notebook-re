@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E33D45062AA44EDD004CC2DC /* 幻ノにじみ明朝.otf in Resources */ = {isa = PBXBuildFile; fileRef = E33D45032AA44EDD004CC2DC /* 幻ノにじみ明朝.otf */; };
+		E33D45072AA44EDD004CC2DC /* ReadMe.txt in Resources */ = {isa = PBXBuildFile; fileRef = E33D45042AA44EDD004CC2DC /* ReadMe.txt */; };
+		E33D45082AA44EDD004CC2DC /* LICENSE_OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = E33D45052AA44EDD004CC2DC /* LICENSE_OFL.txt */; };
 		E3BB24342A35A00700F400B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BB24332A35A00700F400B9 /* AppDelegate.swift */; };
 		E3BB24362A35A00700F400B9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BB24352A35A00700F400B9 /* SceneDelegate.swift */; };
 		E3BB24382A35A00700F400B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BB24372A35A00700F400B9 /* ViewController.swift */; };
@@ -19,7 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E331EBB72A91E09F009A2753 /* 幻ノにじみ明朝.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "幻ノにじみ明朝.otf"; path = "../../M-NijimiMincho/幻ノにじみ明朝.otf"; sourceTree = "<group>"; };
+		E33D45032AA44EDD004CC2DC /* 幻ノにじみ明朝.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "幻ノにじみ明朝.otf"; sourceTree = "<group>"; };
+		E33D45042AA44EDD004CC2DC /* ReadMe.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReadMe.txt; sourceTree = "<group>"; };
+		E33D45052AA44EDD004CC2DC /* LICENSE_OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE_OFL.txt; sourceTree = "<group>"; };
 		E3BB24302A35A00700F400B9 /* Lyric notebook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lyric notebook.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3BB24332A35A00700F400B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3BB24352A35A00700F400B9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +49,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E33D45022AA44EDD004CC2DC /* M-NijimiMincho */ = {
+			isa = PBXGroup;
+			children = (
+				E33D45032AA44EDD004CC2DC /* 幻ノにじみ明朝.otf */,
+				E33D45042AA44EDD004CC2DC /* ReadMe.txt */,
+				E33D45052AA44EDD004CC2DC /* LICENSE_OFL.txt */,
+			);
+			path = "M-NijimiMincho";
+			sourceTree = "<group>";
+		};
 		E3BB24272A35A00700F400B9 = {
 			isa = PBXGroup;
 			children = (
@@ -73,7 +88,7 @@
 				E3DA6FCB2A481A2100B42903 /* AddViewController.swift */,
 				E3CE537C2A5A77A400749C92 /* lylicsListViewController.swift */,
 				E3CE53862A5A7FD600749C92 /* LylicsTableViewCell.swift */,
-				E331EBB72A91E09F009A2753 /* 幻ノにじみ明朝.otf */,
+				E33D45022AA44EDD004CC2DC /* M-NijimiMincho */,
 			);
 			path = "Lyric notebook";
 			sourceTree = "<group>";
@@ -136,8 +151,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E33D45062AA44EDD004CC2DC /* 幻ノにじみ明朝.otf in Resources */,
 				E3BB24402A35A00800F400B9 /* LaunchScreen.storyboard in Resources */,
+				E33D45082AA44EDD004CC2DC /* LICENSE_OFL.txt in Resources */,
 				E3BB243D2A35A00800F400B9 /* Assets.xcassets in Resources */,
+				E33D45072AA44EDD004CC2DC /* ReadMe.txt in Resources */,
 				E3BB243B2A35A00700F400B9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

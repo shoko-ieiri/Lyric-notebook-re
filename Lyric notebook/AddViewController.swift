@@ -32,6 +32,8 @@ class AddViewController: UIViewController {
         let cameraButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.camera, target: self, action: nil)
         toolBar.items = [cameraButton]
         
+        textView.layer.borderColor = UIColor.810081
+        
         self.view.addSubview(toolBar)
     }
     
@@ -49,7 +51,7 @@ class AddViewController: UIViewController {
         data.append(addedData)
         UserDefaults.standard.setValue(data, forKey: "lylics")
         
-        let previousController = self.presentingViewController as! UINavigationController
+       let previousController = self.presentingViewController as! UINavigationController
        let preVC = previousController.viewControllers[previousController.viewControllers.count - 1] as! LylicsListViewController
         preVC.fetchLylicsData()
         preVC.tableView.reloadData()
