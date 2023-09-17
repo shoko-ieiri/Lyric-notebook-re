@@ -32,7 +32,7 @@ class AddViewController: UIViewController {
         let cameraButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.camera, target: self, action: nil)
         toolBar.items = [cameraButton]
         
-        textView.layer.borderColor = UIColor.810081
+        
         
         self.view.addSubview(toolBar)
     }

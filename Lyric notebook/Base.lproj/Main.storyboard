@@ -18,7 +18,7 @@
             <objects>
                 <viewController id="wvh-Wm-jr3" customClass="AddViewController" customModule="Lyric_notebook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="r2A-Ev-X6N">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="murasaki" translatesAutoresizingMaskIntoConstraints="NO" id="VjF-yB-eJP">
@@ -66,23 +66,11 @@
         <!--Lylics List View Controller-->
         <scene sceneID="Spo-ya-hk3">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="g3I-pi-gOx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="eB3-xS-8Oq" customClass="LylicsListViewController" customModule="Lyric_notebook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ox8-L9-WBy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oVA-UH-x3q">
-                                <rect key="frame" x="288" y="568" width="75" height="75"/>
-                                <color key="backgroundColor" red="0.67450982329999998" green="0.5411764979" blue="0.88627451660000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="75" id="2Dj-ff-Mj9"/>
-                                    <constraint firstAttribute="height" constant="75" id="JuV-af-soR"/>
-                                </constraints>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                            </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="zpf-km-XRA">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <prototypes>
@@ -117,6 +105,20 @@
                                 </prototypes>
                                 <sections/>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oVA-UH-x3q">
+                                <rect key="frame" x="288" y="568" width="75" height="75"/>
+                                <color key="backgroundColor" red="0.67450982329999998" green="0.5411764979" blue="0.88627451660000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="2Dj-ff-Mj9"/>
+                                    <constraint firstAttribute="height" constant="75" id="JuV-af-soR"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="＋"/>
+                                <connections>
+                                    <segue destination="bXw-pj-84L" kind="presentation" id="fpK-i9-sMk"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="toA-iC-M8C"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -133,10 +135,11 @@
                     <navigationItem key="navigationItem" id="QOx-1q-amu"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="button" destination="oVA-UH-x3q" id="0lm-cN-rFf"/>
-                        <outlet property="tableView" destination="zpf-km-XRA" id="ZbW-yH-jzR"/>
+                        <outlet property="button" destination="oVA-UH-x3q" id="br4-53-DCy"/>
+                        <outlet property="tableView" destination="zpf-km-XRA" id="qqA-nN-1xc"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g3I-pi-gOx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3436" y="4.9475262368815596"/>
         </scene>
@@ -146,7 +149,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bXw-pj-84L" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="CPw-hB-Qgi">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
